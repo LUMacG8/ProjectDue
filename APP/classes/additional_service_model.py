@@ -316,7 +316,7 @@ class Menu:
             connection = getCursor()
             insert_query = """INSERT INTO menu (name, price, image, description)
             VALUES (%s, %s, %s, %s)"""
-            connection.execute(insert_query, (menu.name, menu.price, "/"+ menu.image, menu.description))
+            connection.execute(insert_query, (menu.name, menu.price, menu.image, menu.description))
         except Exception as e:
             print("Error while adding menu:", e)
             return False
