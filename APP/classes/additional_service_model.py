@@ -343,7 +343,7 @@ class Menu:
                 food_id=row[0],
                 name=row[1],
                 price=row[2],
-                image=row[3],
+                image=row[3].lstrip("/"),
                 description=row[4]
             )
             return menu
