@@ -22,7 +22,7 @@ from .classes.calendar_model import Calendar
 
 app = Flask(__name__)
 
-app.config['UPLOAD_FOLDER'] = 'APP/static'  # upload file route
+app.config['UPLOAD_FOLDER'] = 'ProjectDue/APP/static'  # upload file route
 app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg', 'gif'}  # accepted file type
 
 # Create a Blueprint for the admin routes
